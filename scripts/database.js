@@ -1,7 +1,7 @@
 /*
 
     This module contains all of the data, or state, for the
-    application. It exports two functions that allow other
+    application. It exports four functions that allow other
     modules to get copies of the state.
 
 */
@@ -36,7 +36,10 @@ const database = {
     ]
 }
 
-export const getMetals = () => {
-    return database.metals.map(metal => ({...metal}))
-}
+export const getMetals = () => database.metals.map(metal => ({...metal}))
 
+export const getSizes = () => database.sizes.map(size => ({...size}))
+
+export const getStyles = () => database.styles.map(style => ({...style}))
+
+export const getOrders = () => database.styles.map(customOrder => ({...customOrder}))
