@@ -10,7 +10,14 @@ const buildOrderListItem = (order) => {
     const foundSize = sizes.find((size) => size.id === order.sizeId)
     const foundStyle = styles.find((style) => style.id === order.styleId)
 
-    const totalCost = foundMetal.price + foundSize.price + foundStyle.price
+    let totalCost = foundMetal.price + foundSize.price + foundStyle.price
+
+    if (order.typeId === 2) {
+        totalCost *= 2
+    }
+    else if (order.typeId === 3) {
+        totalCost *= 4
+    }
 
     const costString = totalCost.toLocaleString("en-US", {
         style: "currency",

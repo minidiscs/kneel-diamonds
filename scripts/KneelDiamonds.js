@@ -4,6 +4,7 @@ import { DiamondSizes } from "./DiamondSizes.js"
 import { JewelryStyles } from "./JewelryStyles.js"
 import { Metals } from "./Metals.js"
 import { Orders } from "./Orders.js"
+import { JewelryTypes } from "./Types.js"
 
 document.addEventListener("click",(event) => {
         if (event.target.id === "orderButton") {
@@ -28,6 +29,9 @@ export const KneelDiamonds = () => {
             <section class="choices__styles options">
                 <h2>Styles</h2>
                 ${JewelryStyles()}
+            </section>
+            <section class="choices__type options">
+                ${JewelryTypes()}
             </section>
         </article>
 

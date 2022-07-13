@@ -31,6 +31,7 @@ const database = {
             metalId: 3,
             sizeId: 2,
             styleId: 3,
+            typeId: 2,
             timestamp: 1614659931693
         }
     ],
@@ -50,6 +51,8 @@ export const setMetal = (id) => database.orderBuilder.metalId = id
 export const setSize = (id) => database.orderBuilder.sizeId = id
 
 export const setStyle = (id) => database.orderBuilder.styleId = id
+
+export const setType = (id) => database.orderBuilder.typeId = id
 
 export const addCustomOrder = () => {
     // Copy the current state of user choices
