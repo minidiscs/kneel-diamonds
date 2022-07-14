@@ -1,4 +1,4 @@
-import { getStyles, setState } from "./database.js"
+import { getStyles, setState } from "./dataAccess.js"
 
 const styles = getStyles()
 

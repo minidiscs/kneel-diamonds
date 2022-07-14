@@ -1,4 +1,4 @@
-import { addCustomOrder, getState } from "./database.js"
+import { addCustomOrder, getState } from "./dataAccess.js"
 import { DiamondSizes } from "./DiamondSizes.js"
 import { JewelryStyles } from "./JewelryStyles.js"
 import { Metals } from "./Metals.js"
